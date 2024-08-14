@@ -1,3 +1,4 @@
+// APACHE NOTICE: This file has been modified from the original source
 package types
 
 import (

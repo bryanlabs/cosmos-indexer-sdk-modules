@@ -1,3 +1,4 @@
+// LICENSE NOTICE: This file is not sourced from the licensed code referenced in the LICENSE file of this subfolder. Its licensed by the root LICENSE file.
 module github.com/DefiantLabs/cosmos-indexer-modules/terra-classic
 
 go 1.22

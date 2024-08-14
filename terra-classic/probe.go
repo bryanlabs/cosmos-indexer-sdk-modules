@@ -1,4 +1,4 @@
-// This file is not sourced from the licensed code referenced in the LICENSE file of this subfolder. Its licensed by the root LICENSE file.
+// LICENSE NOTICE: This file is not sourced from the licensed code referenced in the LICENSE file of this subfolder. Its licensed by the root LICENSE file.
 package terraclassic
 
 import (

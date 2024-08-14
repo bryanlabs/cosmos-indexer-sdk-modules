@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+# APACHE NOTICE: This file has been modified from the original source
 
 set -eo pipefail
 

@@ -1,11 +1,23 @@
 package terraclassic
 
 import (
-	"github.com/DefiantLabs/cosmos-indexer-modules/terra-classic/x/market/types"
+	marketTypes "github.com/DefiantLabs/cosmos-indexer-modules/terra-classic/x/market/types"
+	wasmTypes "github.com/DefiantLabs/cosmos-indexer-modules/terra-classic/x/wasm/types"
 	"github.com/DefiantLabs/probe/client"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 func IncludeMarketImplementations(client *client.ChainClient) {
-	client.Codec.ProbeInterfaceRegistry.RegisterCustomTypeURL((*sdk.Msg)(nil), "/terra.market.v1beta1.MsgSwap", (*types.MsgSwap)(nil))
+	client.Codec.ProbeInterfaceRegistry.RegisterCustomTypeURL((*sdk.Msg)(nil), "/terra.market.v1beta1.MsgSwap", (*marketTypes.MsgSwap)(nil))
+	client.Codec.ProbeInterfaceRegistry.RegisterCustomTypeURL((*sdk.Msg)(nil), "/terra.market.v1beta1.MsgSwapSend", (*marketTypes.MsgSwapSend)(nil))
+}
+
+func IncludeWASMImplementations(client *client.ChainClient) {
+	client.Codec.ProbeInterfaceRegistry.RegisterCustomTypeURL((*sdk.Msg)(nil), "/terra.wasm.v1beta1.MsgExecuteContract", (*wasmTypes.MsgExecuteContract)(nil))
+	client.Codec.ProbeInterfaceRegistry.RegisterCustomTypeURL((*sdk.Msg)(nil), "/terra.wasm.v1beta1.MsgInstantiateContract", (*wasmTypes.MsgInstantiateContract)(nil))
+	client.Codec.ProbeInterfaceRegistry.RegisterCustomTypeURL((*sdk.Msg)(nil), "/terra.wasm.v1beta1.MsgMigrateContract", (*wasmTypes.MsgMigrateContract)(nil))
+	client.Codec.ProbeInterfaceRegistry.RegisterCustomTypeURL((*sdk.Msg)(nil), "/terra.wasm.v1beta1.MsgMigrateCode", (*wasmTypes.MsgMigrateCode)(nil))
+	client.Codec.ProbeInterfaceRegistry.RegisterCustomTypeURL((*sdk.Msg)(nil), "/terra.wasm.v1beta1.MsgStoreCode", (*wasmTypes.MsgStoreCode)(nil))
+	client.Codec.ProbeInterfaceRegistry.RegisterCustomTypeURL((*sdk.Msg)(nil), "/terra.wasm.v1beta1.MsgUpdateContractAdmin", (*wasmTypes.MsgUpdateContractAdmin)(nil))
+	client.Codec.ProbeInterfaceRegistry.RegisterCustomTypeURL((*sdk.Msg)(nil), "/terra.wasm.v1beta1.MsgClearContractAdmin", (*wasmTypes.MsgClearContractAdmin)(nil))
 }

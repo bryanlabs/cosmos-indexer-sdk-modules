@@ -1,10 +1,10 @@
 // LICENSE NOTICE: This file is not sourced from the licensed code referenced in the LICENSE file of this subfolder. Its licensed by the root LICENSE file.
 module github.com/DefiantLabs/cosmos-indexer-modules/terra-classic
 
-go 1.22
+go 1.22.0
 
 require (
-	github.com/DefiantLabs/probe v0.0.0-20240814044509-ea5409764044
+	github.com/DefiantLabs/probe v0.0.0-20240820043230-ffbbb1824466
 	github.com/cosmos/cosmos-sdk v0.47.7
 	github.com/cosmos/gogoproto v1.4.10
 	github.com/gogo/protobuf v1.3.2

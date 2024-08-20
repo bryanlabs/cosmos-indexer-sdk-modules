@@ -1,0 +1,3 @@
+The files in this subfolder are sourced with modifications from https://github.com/terra-money/classic-core/tree/59a5b744c2dade15983907f05e00b4b2d07ffc67
+
+The go.sum file in this subfolder is not sourced from the above repository. Its licensed by the root LICENSE file.

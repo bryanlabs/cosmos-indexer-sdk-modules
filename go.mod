@@ -1,4 +1,4 @@
-module github.com/DefiantLabs/cosmos-indexer-modules/block-sdk
+module github.com/DefiantLabs/cosmos-indexer-modules
 
 go 1.22.0
 
@@ -7,6 +7,7 @@ require (
 	github.com/cosmos/cosmos-proto v1.0.0-beta.4
 	github.com/cosmos/cosmos-sdk v0.47.7
 	github.com/cosmos/gogoproto v1.4.10
+	github.com/gogo/protobuf v1.3.2
 	google.golang.org/genproto/googleapis/api v0.0.0-20231212172506-995d672761c0
 )
 
@@ -31,7 +32,6 @@ require (
 	github.com/go-kit/kit v0.12.0 // indirect
 	github.com/go-kit/log v0.2.1 // indirect
 	github.com/go-logfmt/logfmt v0.6.0 // indirect
-	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/glog v1.1.2 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
